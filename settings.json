@@ -1,28 +1,67 @@
 {
-  "eslint.format.enable": true,
-  "editor.formatOnSave": true,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "swaggerViewer.previewInBrowser": true,
-  "redhat.telemetry.enabled": false,
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  // IDE style
+  "git.openRepositoryInParentFolders": "never",
+  "workbench.colorTheme": "One Dark Pro Mix",
   "editor.fontLigatures": true,
-  "typescript.suggest.paths": false,
-  "javascript.suggest.paths": false,
-  "typescript.referencesCodeLens.enabled": true,
-  "javascript.referencesCodeLens.enabled": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.tree.indent": 16,
-  "workbench.tree.renderIndentGuides": "always",
-  "workbench.colorCustomizations": {},
-  "git.autofetch": true,
-  "workbench.colorTheme": "Dracula",
-  "git.mergeEditor": false
+  "workbench.editor.enablePreview": false,
+  "javascript.suggest.paths": false,
+  
+  // Diff editor
+  "diffEditor.maxComputationTime": 0,
+  "workbench.colorCustomizations": {
+    "diffEditor.insertedTextBackground": "#00ff007c",
+    "diffEditor.removedTextBackground": "#ff00007c",
+    "diffEditor.insertedLineBackground": "#22336866",
+    "diffEditor.removedLineBackground": "#72336a66",
+    "diffEditorGutter.insertedLineBackground": "#223368ff",
+    "diffEditorGutter.removedLineBackground": "#72336aff",
+    "diffEditorOverview.insertedForeground": "#02b40b",
+    "diffEditorOverview.removedForeground": "#a10000"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  
+  // Lint / Code style
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    "addMissingImports": "always"
+  },
+  "eslint.validate": ["javascript", "typescript"],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[css]":{
+    "editor.defaultFormatter": "stylelint.vscode-stylelint",
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  // In order to make StyleLint take precedence
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "editor.accessibilitySupport": "off",
+  "workbench.startupEditor": "none",
 }
